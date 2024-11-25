@@ -1,29 +1,8 @@
-// import React from "react";
-// import { NavigationContainer } from "@react-navigation/native";
-// import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-// import Home from "../screens/Home";
-// import Config from "../screens/Config";
-
-// const bottomTab = createBottomTabNavigator();
-
-// const Navigation = () => {
-//   return (
-//     <NavigationContainer>
-//       <bottomTab.Navigator>
-//         <bottomTab.Screen name="Home" component={Home} />
-//         <bottomTab.Screen name="Profile" component={Config} />
-//       </bottomTab.Navigator>
-//     </NavigationContainer>
-//   );
-// };
-
-// export default Navigation;
-
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import HomeScreen from '../screens/Home';
-import SettingsScreen from '../screens/Settings';
+import HomeScreen from '../screens/Home/index.jsx';
+import SettingsScreen from '../screens/Settings/index.jsx';
 import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();

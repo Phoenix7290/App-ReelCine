@@ -1,5 +1,5 @@
 import axios from 'axios';
-import config from "../../env/config";
+import config from "../../env/config.js";
 
 const API_KEY = config.tmdbApiKey;
 const BASE_URL = 'https://api.themoviedb.org/3';

@@ -1,9 +1,8 @@
-import React from 'react';
 import { registerRootComponent } from 'expo';
-import AppNavigator from './App/navigation/index.jsx';
 
-export default function App() {
-  return <AppNavigator />;
-}
+import App from './App.js';
 
+// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
+// It also ensures that whether you load the app in Expo Go or in a native build,
+// the environment is set up appropriately
 registerRootComponent(App);

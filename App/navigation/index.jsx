@@ -2,7 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import HomeScreen from '../screens/Home/index.jsx';
-import SettingsScreen from '../screens/Settings/index.jsx';
+import Favorites from '../screens/Favorites/index.jsx';
 import { Ionicons } from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator();
@@ -16,8 +16,8 @@ export default function AppNavigator() {
             let iconName;
             if (route.name === 'Home') {
               iconName = 'home';
-            } else if (route.name === 'Settings') {
-              iconName = 'settings';
+            } else if (route.name === 'Favorites') {
+                iconName = 'heart';
             }
             return <Ionicons name={iconName} size={size} color={color} />;
           },
@@ -26,7 +26,7 @@ export default function AppNavigator() {
         })}
       >
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Settings" component={SettingsScreen} />
+        <Tab.Screen name="Favorites" component={Favorites} />
       </Tab.Navigator>
     </NavigationContainer>
   );
